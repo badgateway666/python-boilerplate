@@ -1,0 +1,36 @@
+[project]
+name = "Boilerplate"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+
+]
+
+[project.optional-dependencies]
+dev = [
+  "black>=22.10.0",
+  "isort>=5.10.1",
+  "pytest>=7.2.0",
+  "pytest-cov>=4.0.0",
+]
+
+[tool.ruff]
+ignore = ["E501"]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.coverage.paths]
+source = ["app"]
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.black]
+line-length = 120

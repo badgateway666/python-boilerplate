@@ -8,6 +8,8 @@ name = "pypi"
 [dev-packages]
 pre-commit = "*"
 pytest = "*"
+pytest-cov = "*"
+isort = "*"
 
 [requires]
 python_version = "3.11"
