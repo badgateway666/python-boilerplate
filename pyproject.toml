@@ -9,18 +9,15 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-  "black>=22.10.0",
-  "isort>=5.10.1",
-  "pytest>=7.2.0",
-  "pytest-cov>=4.0.0",
+
 ]
+
+
+[tool.black]
+line-length = 120
 
 [tool.ruff]
 ignore = ["E501"]
-
-[tool.isort]
-profile = "black"
-line_length = 120
 
 [tool.coverage.paths]
 source = ["app"]
@@ -31,6 +28,3 @@ relative_files = true
 
 [tool.coverage.report]
 show_missing = true
-
-[tool.black]
-line-length = 120
